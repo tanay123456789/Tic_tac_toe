@@ -27,23 +27,26 @@ const App=() => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p> 
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Icon/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="p-5">
+      <ToastContainer position="bottom-center"/>
+      <Row>
+        <Col md={6} className="offset-md-3">
+          <div className="grid">
+          {itemArray.map((item )=>{
+            return(
+              <Card>
+                <CardBody className="box">
+                  <Icon name={item}/>
+                </CardBody>
+              </Card>
+            )
+          })}
+          
+
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
