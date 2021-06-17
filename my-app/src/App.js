@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import Icon from "./components/Icon";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -90,6 +89,7 @@ const App = () => {
       <ToastContainer position="bottom-center" />
       <Row>
         <Col md={6} className="offset-md-3">
+        
           {winMessage ? (
             <div className="mb-2 mt-2">
               <h1 className="text-success text-uppercase text-center">

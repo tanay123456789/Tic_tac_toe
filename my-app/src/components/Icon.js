@@ -1,5 +1,7 @@
 import React from "react"
-import {FaTimes,FaPen,FaRegCircle} from "react-icons/fa"
+import {FaTimes,FaRegCircle} from "react-icons/fa"
+
+//component responsible for returning icon when user click button
 const Icon= ({name})=>{
     switch(name){
         case 'circle':
