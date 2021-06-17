@@ -6,8 +6,9 @@ const Icon= ({name})=>{
             return <FaRegCircle className="icons"/>
         case 'cross':
             return <FaTimes className="icons"/>
+        
         default:
-            return <FaPen className="icons"/>
+            return " "
             
             
     }
