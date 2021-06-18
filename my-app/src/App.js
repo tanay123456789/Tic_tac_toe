@@ -62,6 +62,7 @@ const App = () => {
     setWinMessage(`${itemArray[0]} wins`)
   }
 
+  
   else if( itemArray[2]===itemArray[4]&&
   itemArray[2]===itemArray[6]&&
   itemArray[2]!=="empty"){
@@ -77,8 +78,9 @@ const App = () => {
     if (itemArray[itemNumber] === "empty") {
       itemArray[itemNumber] = isCross ? "cross" : "circle";
       setIsCross(!isCross);
-    } else {
-      return toast("already filled", { type: "error" });
+    }
+     else {
+       return toast("already filled", { type: "error" });
     }
 
     checkIsWinner();
@@ -89,7 +91,7 @@ const App = () => {
       <ToastContainer position="bottom-center" />
       <Row>
         <Col md={6} className="offset-md-3">
-        
+
           {winMessage ? (
             <div className="mb-2 mt-2">
               <h1 className="text-success text-uppercase text-center">
