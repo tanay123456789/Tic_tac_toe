@@ -9,7 +9,7 @@
 ## How to use it on your local machine🤔?
 
 - First fork this repository.
-- Then clone it using **git clone** command.
+- Then clone it locally using **git clone** command.
 - After cloning it open it on your code editor.
 - On your editor's terminal write **cd my-app**.
 - Then write **npm install** to install all the dependencies.
