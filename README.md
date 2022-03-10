@@ -13,4 +13,4 @@
 - After cloning it open it on your code editor.
 - On your editor's terminal write **cd my-app**.
 - Then write **npm install** to install all the dependencies.
-- Once all the dependencies are installed then type **npm run** command to run it on your **localhost**.
+- Once all the dependencies are installed then type **npm start** command to run it on your **localhost**.
